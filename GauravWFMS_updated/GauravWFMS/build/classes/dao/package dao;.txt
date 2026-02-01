@@ -1,0 +1,19 @@
+package dao;
+
+import model.Project;
+import java.util.ArrayList;
+import java.util.List;
+
+public class Projectdao {
+    private static List<Project> projects = new ArrayList<>();
+
+    public static void addProject(Project project) {
+        projects.add(project);
+    }
+
+    public static List<Project> getAllProjects() {
+        return projects;
+    }
+
+    // Add methods to assign/request workers, etc.
+}
